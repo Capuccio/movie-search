@@ -1,11 +1,24 @@
+/** @format */
+
 import React from 'react'
 import ReactDOM from 'react-dom'
 
 import Routes from './Routes'
 
+import { createGlobalStyle } from 'styled-components'
+
+const GlobalStyle = createGlobalStyle`
+body {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+`
+
 ReactDOM.render(
-  <React.StrictMode>
-    <Routes />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+	<React.StrictMode>
+		<GlobalStyle />
+		<Routes />
+	</React.StrictMode>,
+	document.getElementById('root')
+)

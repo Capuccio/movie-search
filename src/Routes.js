@@ -6,6 +6,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import styled from 'styled-components'
 
 import Navbar from './components/Navbar'
+import SearchBar from './components/SearchBar'
+
 import Home from './pages/Home'
 import Other from './pages/Other'
 
@@ -13,7 +15,8 @@ const Routes = () => {
 	return (
 		<AppContainer>
 			<Navbar />
-			<Background>
+			<PageView>
+				<SearchBar />
 				<BrowserRouter>
 					<Switch>
 						<Route exact path='/'>
@@ -24,18 +27,18 @@ const Routes = () => {
 						</Route>
 					</Switch>
 				</BrowserRouter>
-			</Background>
+			</PageView>
 		</AppContainer>
 	)
 }
 
 export default Routes
 
-const Background = styled.div`
-	background-color: rgba(11, 23, 68, 255);
+const PageView = styled.div`
 	width: 100%;
 `
 const AppContainer = styled.div`
 	display: flex;
-	align-items: stretch;
+	overflow: auto;
+	height: 100vh;
 `

@@ -4,7 +4,7 @@ import React from 'react'
 
 import { NavbarContainer } from './style'
 
-function Navbar() {
+const Navbar = () => {
 	return (
 		<NavbarContainer>
 			<p>HIIIIII</p>

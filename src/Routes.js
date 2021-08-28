@@ -13,11 +13,11 @@ import Other from './pages/Other'
 
 const Routes = () => {
 	return (
-		<AppContainer>
-			<Navbar />
-			<PageView>
-				<SearchBar />
-				<BrowserRouter>
+		<BrowserRouter>
+			<AppContainer>
+				<Navbar />
+				<PageView>
+					<SearchBar />
 					<Switch>
 						<Route exact path='/'>
 							<Home />
@@ -26,9 +26,9 @@ const Routes = () => {
 							<Other />
 						</Route>
 					</Switch>
-				</BrowserRouter>
-			</PageView>
-		</AppContainer>
+				</PageView>
+			</AppContainer>
+		</BrowserRouter>
 	)
 }
 

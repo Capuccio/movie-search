@@ -1,16 +1,24 @@
 /** @format */
 
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
-import { NavbarContainer } from './style'
+import { IoHomeOutline, IoFilmOutline, IoTvOutline } from 'react-icons/io5'
+
+import { NavbarContainer, navLinkStyle, iconStyle } from './style'
 
 const Navbar = () => {
 	return (
 		<NavbarContainer>
-			<p>HIIIIII</p>
-			<p>Navbar</p>
-			<p>Navbar</p>
-			<p>Navbar</p>
+			<NavLink exact to='/' activeStyle={navLinkStyle}>
+				<IoHomeOutline style={iconStyle} />
+			</NavLink>
+			<NavLink to='/other' activeStyle={navLinkStyle}>
+				<IoFilmOutline style={iconStyle} />
+			</NavLink>
+			<NavLink to='/other' activeStyle={navLinkStyle}>
+				<IoTvOutline style={iconStyle} />
+			</NavLink>
 		</NavbarContainer>
 	)
 }

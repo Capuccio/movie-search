@@ -2,14 +2,15 @@
 
 import React from 'react'
 
-import { InputSearch } from './style'
+import { IoSearchOutline } from 'react-icons/io5'
 
-const SearchBar = () => {
-	return (
-		<div style={{ border: '1px solid green', marginLeft: '20px' }}>
-			<InputSearch placeholder='Search...' />
-		</div>
-	)
-}
+import { SearchBarContainer, InputSearch, searchIcon } from './style'
+
+const SearchBar = () => (
+	<SearchBarContainer>
+		<InputSearch placeholder='Search...' />
+		<IoSearchOutline style={searchIcon} />
+	</SearchBarContainer>
+)
 
 export default SearchBar

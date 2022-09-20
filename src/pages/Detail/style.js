@@ -13,11 +13,6 @@ export const DetailColumn = styled.div`
 	margin-top: ${(props) => props.marginTop};
 `
 
-export const MoviePlot = styled.p`
-	margin-top: 40px;
-	color: rgba(135, 135, 135, 1);
-`
-
 export const MovieRating = styled.div`
 	margin-top: 75px;
 	display: flex;
@@ -31,22 +26,6 @@ export const GeneralRating = styled.div`
 	font-size: 28px;
 	width: 120px;
 `
-
-export const ReviewRating = styled.div`
-	width: 18%;
-`
-
-export const ReviewRatingNumber = styled.span`
-	font-weight: bold;
-	font-size: 28px;
-`
-
-export const ReviewRatingNumberOf = styled.span`
-	font-size: calc(100% - 50%);
-	font-weight: normal;
-`
-
-export const ReviewRatingName = styled.div``
 
 export const BarWrapper = styled.div`
 	position: relative;

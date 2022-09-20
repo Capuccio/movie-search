@@ -1,8 +1,8 @@
 /** @format */
 
-import { NavLink } from 'react-router-dom'
-
 import styled from 'styled-components'
+
+import { NavLink } from 'react-router-dom'
 
 export const NavbarContainer = styled.div`
 	width: 7%;

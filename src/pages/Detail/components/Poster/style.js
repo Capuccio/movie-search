@@ -6,10 +6,10 @@ export const PosterContainer = styled.div`
 	width: 100%;
 `
 export const PosterImage = styled.img`
-	height: 330px;
+	height: 350px;
 	width: 100%;
 	box-shadow: 0px 8px 24px rgba(149, 157, 165, 0.3);
-	object-fit: cover;
+	object-fit: fill;
 `
 export const PosterIcon = styled.div`
 	position: relative;

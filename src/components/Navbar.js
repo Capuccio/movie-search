@@ -4,7 +4,7 @@ import React from 'react'
 
 import { IoHomeOutline, IoNewspaperOutline, IoFilmOutline, IoTvOutline } from 'react-icons/io5'
 
-import { NavbarContainer, NavbarLink, iconStyle } from './style'
+import { NavbarContainer, NavbarLink, iconStyle } from './styles'
 
 const Navbar = () => {
 	return (
@@ -12,14 +12,8 @@ const Navbar = () => {
 			<NavbarLink exact to='/'>
 				<IoHomeOutline style={iconStyle} />
 			</NavbarLink>
-			<NavbarLink to='/detail/2'>
+			<NavbarLink to='/detail'>
 				<IoFilmOutline style={iconStyle} />
-			</NavbarLink>
-			<NavbarLink to='/other'>
-				<IoTvOutline style={iconStyle} />
-			</NavbarLink>
-			<NavbarLink to='/other'>
-				<IoNewspaperOutline style={iconStyle} />
 			</NavbarLink>
 		</NavbarContainer>
 	)

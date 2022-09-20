@@ -12,6 +12,7 @@ module.exports = {
 		}),
 		new DotEnv({
 			path: path.resolve(__dirname, '.env'),
+			systemvars: true,
 		}),
 	],
 	module: {
